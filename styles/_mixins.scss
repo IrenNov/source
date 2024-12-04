@@ -1,0 +1,20 @@
+@mixin fluid-text($max: 16, $min: 14) {
+  $vw-value: round(($max / 768 * 100) * 100) / 100;
+  font-size: clamp(#{$min}px, #{$vw-value}vw, #{$max}px);
+}
+
+@mixin reset-link {
+  color: inherit;
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin reset-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+

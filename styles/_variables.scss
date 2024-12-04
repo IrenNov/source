@@ -1,0 +1,45 @@
+:root {
+  --color-primary: #f91155;
+  --color-primary-2: #ff4b77;
+  --color-primary-3: #d8003f;
+  --color-accent: #ff7647;
+  --color-secondary: #3c3e43;
+  --color-link-pressed: #ff97b0;
+  --color-btn-pressed: #f9637c;
+  --color-background-card: #2d507c;
+  --color-black: #000000;
+  --color-white: 255, 255, 255;
+
+  --gradient-1: linear-gradient(180deg, rgba(10, 34, 64, 0.1) 0%, #0a2240 100%);
+  --gradient-2:
+    linear-gradient(
+      21deg,
+      rgba(170, 203, 240, 0.25) 0%,
+      rgba(170, 203, 240, 0.75) 100%
+    );
+  --fon-gradient:
+    linear-gradient(
+      180deg,
+      rgba(222, 237, 255, 0.6) 0%,
+      rgba(166, 204, 250, 0.5) 100%
+    );
+
+  --border-radius: 5px;
+  --button-height: 48px;
+
+  --border-radius-card: 10px;
+
+  --font-family-second: "Roboto", arial, sans-serif;
+  --font-family-first: "Open Sans", arial, sans-serif;
+
+  --btn-hover-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  --card-hover-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.6);
+
+  --container-width: 1180px;
+  --container-padding-x: clamp(16px, 4.43vw, 34px);
+  --container-padding-y: clamp(24px, 3.52vw, 27px) 35px;
+
+  @include mobile-s {
+    --container-padding-y: 20px 49px;
+  }
+}
